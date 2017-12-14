@@ -52,7 +52,7 @@ gulp.task('assets', ['clean:assets'], () => {
     .pipe(connect.reload());
 });
 
-const htmlPath = './*.html';
+const htmlPath = './*.html'; // take html from root folder.
 
 // Copy index file
 gulp.task('html', ['clean:html'], () => {
