@@ -53,7 +53,14 @@ Use this command to create a final build of your site into the `dist` folder.
 
 `scripts` — Contains the `index.js` file. You can use ES6 imports to import other files from this directory (advanced). Rollup is used to concat all fils into one `dist/index.js` file.
 
-`styles` — Contains the `index.css` file. You can use the `@import` rule to import other files from this directory. PostCSS is used to concat all files into one `dist/index.css` file and also to autoprefix and add some more goodness to your final CSS file.
+`styles` — Contains the `index.css` file. You can use the `@import` rule to import other files from `styles/` directory. 
+For example:
+```
+@import "normalize.css";
+@import "skeleton.css";
+@import "typenugget-lemon.css";
+```
+PostCSS is used to concat all files into one `dist/index.css` file and also to autoprefix and add some more goodness to your final CSS file.
 
 **Advanced parts:**
 
